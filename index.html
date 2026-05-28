@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI in Drug Discovery & Repurposing – Mini Research Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     COVER PAGE
+═══════════════════════════════════════════════════════════ -->
+<div class="cover">
+  <div class="cover-tag">Mini Research Project · Pharmaceutical Biotechnology</div>
+
+  <h1>Artificial Intelligence in <em>Drug Discovery</em> &amp; Repurposing</h1>
+
+  <p class="cover-subtitle">
+    How machine learning, deep neural networks, and generative AI are reshaping the
+    pharmaceutical pipeline — from target identification to clinical repurposing.
+  </p>
+
+  <div class="cover-divider"></div>
+
+  <div class="cover-meta">
+    <div class="cover-meta-item">
+      <div class="cover-meta-label">Subject</div>
+      <div class="cover-meta-value">Role of AI &amp; Biotechnology in Pharma</div>
+    </div>
+    <div class="cover-meta-item">
+      <div class="cover-meta-label">Topic</div>
+      <div class="cover-meta-value">AI in Drug Discovery &amp; Repurposing</div>
+    </div>
+    <div class="cover-meta-item">
+      <div class="cover-meta-label">Format</div>
+      <div class="cover-meta-value">Mini Research Project (5–6 Pages)</div>
+    </div>
+    <div class="cover-meta-item">
+      <div class="cover-meta-label">Year</div>
+      <div class="cover-meta-value"><span class="current-year">2025</span></div>
+    </div>
+  </div>
+
+  <div class="cover-bottom-bar"></div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════ -->
+<div class="toc-page">
+  <div class="section-label">Navigation</div>
+  <h2>Table of Contents</h2>
+
+  <ol class="toc-list">
+    <li>
+      <span class="toc-num">01</span>
+      <span class="toc-title">Abstract</span>
+      <span class="toc-dots"></span>
+    </li>
+    <li>
+      <span class="toc-num">02</span>
+      <span class="toc-title">Introduction</span>
+      <span class="toc-dots"></span>
+    </li>
+    <li>
+      <span class="toc-num">03</span>
+      <span class="toc-title">The Traditional Drug Discovery Pipeline &amp; Its Limitations</span>
+      <span class="toc-dots"></span>
+    </li>
+    <li>
+      <span class="toc-num">04</span>
+      <span class="toc-title">AI Technologies in Drug Discovery</span>
+      <span class="toc-dots"></span>
+    </li>
+    <li>
+      <span class="toc-num">05</span>
+      <span class="toc-title">AI in Drug Repurposing</span>
+      <span class="toc-dots"></span>
+    </li>
+    <li>
+      <span class="toc-num">06</span>
+      <span class="toc-title">Case Studies</span>
+      <span class="toc-dots"></span>
+    </li>
+    <li>
+      <span class="toc-num">07</span>
+      <span class="toc-title">Challenges &amp; Ethical Considerations</span>
+      <span class="toc-dots"></span>
+    </li>
+    <li>
+      <span class="toc-num">08</span>
+      <span class="toc-title">Future Outlook</span>
+      <span class="toc-dots"></span>
+    </li>
+    <li>
+      <span class="toc-num">09</span>
+      <span class="toc-title">Conclusion</span>
+      <span class="toc-dots"></span>
+    </li>
+    <li>
+      <span class="toc-num">10</span>
+      <span class="toc-title">References</span>
+      <span class="toc-dots"></span>
+    </li>
+  </ol>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGES 1–2  |  Abstract · Introduction · Traditional Pipeline
+═══════════════════════════════════════════════════════════ -->
+<div class="content-page page-break">
+
+  <!-- ABSTRACT -->
+  <div class="section-label">Section 01</div>
+  <div class="section-heading">
+    <span class="section-num">01</span>
+    <h2 id="abstract">Abstract</h2>
+  </div>
+
+  <p>
+    The pharmaceutical industry is undergoing a fundamental transformation driven by artificial intelligence (AI).
+    Traditional drug development — historically characterised by timelines of 10–15 years and costs exceeding
+    US $2.6 billion per approved molecule — is being accelerated through machine learning (ML), deep learning,
+    and generative models that can analyse vast biomedical datasets, predict molecular behaviour, and identify
+    new therapeutic uses for existing compounds. This paper examines the current applications of AI across
+    the drug discovery and repurposing continuum, reviews landmark case studies including the COVID-19
+    pandemic response, and critically evaluates the technological, regulatory, and ethical challenges that
+    accompany this paradigm shift.
+  </p>
+
+  <p>
+    <strong>Keywords:</strong> Artificial intelligence, drug discovery, drug repurposing, machine learning,
+    deep learning, molecular docking, virtual screening, generative chemistry.
+  </p>
+
+  <!-- INTRODUCTION -->
+  <div class="section-label" style="margin-top:48px;">Section 02</div>
+  <div class="section-heading">
+    <span class="section-num">02</span>
+    <h2 id="introduction">Introduction</h2>
+  </div>
+
+  <p>
+    Drug discovery is among the most intellectually demanding and financially intensive endeavours in modern
+    science. Despite decades of technological progress, the probability of a candidate molecule successfully
+    advancing from preclinical research to regulatory approval remains below 10% [1]. The resulting
+    inefficiency imposes enormous costs on healthcare systems and delays access to life-saving therapies
+    for patients worldwide.
+  </p>
+
+  <p>
+    Artificial intelligence — and in particular machine learning sub-disciplines such as deep neural
+    networks, reinforcement learning, and large language models — has emerged as a transformative force
+    that addresses several of these inefficiencies simultaneously. By learning complex, nonlinear patterns
+    from large-scale biological and chemical datasets, AI systems can prioritise drug targets, predict
+    toxicity, optimise molecular scaffolds, and identify candidate compounds orders of magnitude faster
+    than traditional high-throughput screening [2].
+  </p>
+
+  <div class="callout">
+    <div class="callout-title">Key Definition</div>
+    <p>
+      <strong>Drug Repurposing</strong> (also called drug repositioning or re-profiling) refers to the
+      identification of new therapeutic indications for approved or investigational drugs, thereby
+      bypassing early-stage safety studies and significantly compressing development timelines.
+    </p>
+  </div>
+
+  <p>
+    Drug repurposing is a particularly fertile application domain for AI. Approved drugs already carry
+    well-characterised safety profiles, meaning that a successful repurposing candidate can enter Phase II
+    clinical trials almost immediately, reducing average development costs by up to 60% compared
+    with de novo discovery [3]. The global AI in drug discovery market was valued at approximately
+    US $1.7 billion in 2023 and is projected to exceed US $9.8 billion by 2030, reflecting the sector's
+    rapid adoption of these technologies [4].
+  </p>
+
+  <!-- KEY STATISTICS -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <span class="stat-value" data-count="2.6" data-prefix="$" data-suffix="B">$0B</span>
+      <span class="stat-label">Average cost per approved drug (traditional)</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-value" data-count="12" data-suffix=" yrs">0 yrs</span>
+      <span class="stat-label">Average development timeline without AI</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-value" data-count="60" data-suffix="%">0%</span>
+      <span class="stat-label">Potential cost reduction via repurposing</span>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE 3  |  Traditional Pipeline · AI Technologies
+═══════════════════════════════════════════════════════════ -->
+<div class="content-page page-break">
+
+  <!-- TRADITIONAL PIPELINE -->
+  <div class="section-label">Section 03</div>
+  <div class="section-heading">
+    <span class="section-num">03</span>
+    <h2 id="pipeline">The Traditional Drug Discovery Pipeline &amp; Its Limitations</h2>
+  </div>
+
+  <p>
+    The canonical drug development pipeline proceeds through several well-defined stages: target
+    identification, hit discovery via compound library screening, lead optimisation, preclinical
+    animal studies, and multi-phase clinical trials before regulatory submission. Each stage is
+    characterised by attrition — a compounding series of failures driven primarily by insufficient
+    efficacy, unacceptable toxicity, and unfavourable pharmacokinetics [1].
+  </p>
+
+  <!-- PIPELINE DIAGRAM -->
+  <div class="pipeline">
+    <div class="pipeline-step ai-step">
+      <span class="step-label">Stage 1</span>
+      <span class="step-name">Target ID &amp; Validation</span>
+      <span class="ai-badge">AI</span>
+    </div>
+    <div class="pipeline-step ai-step">
+      <span class="step-label">Stage 2</span>
+      <span class="step-name">Hit Discovery</span>
+      <span class="ai-badge">AI</span>
+    </div>
+    <div class="pipeline-step ai-step">
+      <span class="step-label">Stage 3</span>
+      <span class="step-name">Lead Optimisation</span>
+      <span class="ai-badge">AI</span>
+    </div>
+    <div class="pipeline-step">
+      <span class="step-label">Stage 4</span>
+      <span class="step-name">Preclinical Studies</span>
+    </div>
+    <div class="pipeline-step">
+      <span class="step-label">Stage 5</span>
+      <span class="step-name">Phase I–III Trials</span>
+    </div>
+    <div class="pipeline-step">
+      <span class="step-label">Stage 6</span>
+      <span class="step-name">Regulatory Approval</span>
+    </div>
+  </div>
+  <p style="font-size:.78rem;color:var(--ink-light);text-align:center;margin-top:-14px;margin-bottom:24px;font-family:var(--mono);">
+    Stages highlighted in green represent primary AI intervention points.
+  </p>
+
+  <p>
+    High-throughput screening (HTS) — the workhorse of conventional hit discovery — can test millions of
+    compounds but generates enormous false-positive rates and remains blind to multi-target
+    pharmacology [5]. Lead optimisation, which seeks to improve potency, selectivity, and
+    pharmacokinetic properties simultaneously, traditionally relies on the intuition of medicinal
+    chemists and iterative synthesis cycles that can span years. These inefficiencies have contributed
+    to a phenomenon termed "Eroom's Law" — the observation that drug development productivity has
+    halved roughly every nine years since the 1950s [6].
+  </p>
+
+  <!-- AI TECHNOLOGIES -->
+  <div class="section-label" style="margin-top:48px;">Section 04</div>
+  <div class="section-heading">
+    <span class="section-num">04</span>
+    <h2 id="ai-tech">AI Technologies in Drug Discovery</h2>
+  </div>
+
+  <h3 class="subsection-heading">4.1 Machine Learning &amp; Deep Neural Networks</h3>
+
+  <p>
+    Supervised ML models — including random forests, gradient boosted trees, and graph neural networks
+    (GNNs) — have demonstrated state-of-the-art performance in quantitative structure–activity relationship
+    (QSAR) modelling, predicting how chemical modifications affect biological activity [7]. GNNs in
+    particular exploit the natural graph-like topology of molecules, treating atoms as nodes and bonds as
+    edges, enabling nuanced representation learning that outperforms traditional fingerprint-based
+    descriptors [8].
+  </p>
+
+  <p>
+    Recurrent neural networks and transformers have been applied to protein sequence data, learning
+    evolutionary and structural features that inform target druggability assessment. The protein language
+    model ESM-2, developed by Meta AI, encodes structural and functional properties from sequence alone,
+    dramatically accelerating target validation workflows [9].
+  </p>
+
+  <h3 class="subsection-heading">4.2 AlphaFold &amp; Structural Biology</h3>
+
+  <p>
+    Perhaps the single most consequential AI breakthrough for drug discovery is DeepMind's AlphaFold2,
+    which achieved near-experimental accuracy in predicting three-dimensional protein structures from
+    amino acid sequences [10]. Prior to AlphaFold, experimental structure determination via X-ray
+    crystallography or cryo-EM could take months to years. AlphaFold's release of over 200 million
+    predicted structures has unlocked structure-based drug design for entire classes of previously
+    "undruggable" targets, including intrinsically disordered proteins implicated in cancer and
+    neurodegeneration [11].
+  </p>
+
+  <div class="pull-quote">
+    <blockquote>
+      "AlphaFold has already been used to unlock new avenues of research across biology and medicine —
+      from designing drugs to understanding diseases."
+    </blockquote>
+    <cite>— Nature, 2022 [10]</cite>
+  </div>
+
+  <h3 class="subsection-heading">4.3 Generative AI &amp; de Novo Molecular Design</h3>
+
+  <p>
+    Generative models — including variational autoencoders (VAEs), generative adversarial networks (GANs),
+    and transformer-based architectures such as Insilico Medicine's REINVENT — learn the latent chemical
+    space of known drug-like molecules and generate novel structures with desired properties [12].
+    These models can be conditioned on specific target-binding poses, selectivity profiles, synthetic
+    accessibility scores, or ADMET (absorption, distribution, metabolism, excretion, toxicity) constraints,
+    effectively allowing chemists to navigate molecular space guided by multiparameter objectives [13].
+  </p>
+
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE 4  |  Drug Repurposing · Case Studies
+═══════════════════════════════════════════════════════════ -->
+<div class="content-page page-break">
+
+  <!-- AI IN DRUG REPURPOSING -->
+  <div class="section-label">Section 05</div>
+  <div class="section-heading">
+    <span class="section-num">05</span>
+    <h2 id="repurposing">AI in Drug Repurposing</h2>
+  </div>
+
+  <h3 class="subsection-heading">5.1 Network-Based Approaches</h3>
+
+  <p>
+    Biological systems can be represented as networks (or graphs) in which nodes represent genes,
+    proteins, or diseases, and edges encode experimentally determined interactions. AI algorithms
+    applied to these networks — collectively termed network medicine — can identify "drug–disease
+    proximity": the graph-theoretic distance between a drug's targets and the molecular modules
+    dysregulated in a given disease [14]. Drugs demonstrating high proximity to a new disease
+    signature become repurposing candidates, even if their original indication is entirely
+    unrelated.
+  </p>
+
+  <h3 class="subsection-heading">5.2 Knowledge Graph Embeddings</h3>
+
+  <p>
+    Knowledge graphs (KGs) integrate heterogeneous biomedical data — clinical records, omics data,
+    literature, drug–target interactions, and adverse event reports — into a unified relational
+    structure. Embedding algorithms such as TransE and RotatE learn low-dimensional vector
+    representations of entities and relations, enabling link prediction that surfaces novel
+    drug–disease associations [15]. Platforms such as BenevolentAI and Healx rely on proprietary
+    KG systems to generate repurposing hypotheses at scale, several of which have advanced into
+    clinical trials.
+  </p>
+
+  <h3 class="subsection-heading">5.3 Natural Language Processing on Biomedical Literature</h3>
+
+  <p>
+    PubMed currently indexes over 35 million biomedical citations, a corpus too large for manual
+    review by any research team. NLP pipelines — including named entity recognition (NER),
+    relation extraction, and BERT-derived biomedical language models such as BioBERT and
+    PubMedBERT — automatically mine drug–target–disease associations from unstructured text [16].
+    Such approaches frequently surface repurposing signals hidden within obscure mechanistic
+    side-notes years before they enter mainstream awareness.
+  </p>
+
+  <!-- COMPARISON TABLE -->
+  <div class="data-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>AI Method</th>
+          <th>Primary Data Source</th>
+          <th>Key Advantage</th>
+          <th>Notable Platform</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Graph Neural Networks</td>
+          <td>Molecular graphs, PPI networks</td>
+          <td>Captures structural topology</td>
+          <td>Atomwise, Schrödinger</td>
+        </tr>
+        <tr>
+          <td>Knowledge Graph Embeddings</td>
+          <td>Multi-omics, clinical data</td>
+          <td>Multi-modal integration</td>
+          <td>BenevolentAI, Healx</td>
+        </tr>
+        <tr>
+          <td>NLP / Language Models</td>
+          <td>PubMed, clinical notes</td>
+          <td>Mines unstructured literature</td>
+          <td>IBM Watson Health</td>
+        </tr>
+        <tr>
+          <td>Generative Models (VAE/GAN)</td>
+          <td>Chemical libraries</td>
+          <td>De novo molecule generation</td>
+          <td>Insilico Medicine</td>
+        </tr>
+        <tr>
+          <td>Reinforcement Learning</td>
+          <td>Simulated docking environments</td>
+          <td>Multi-objective optimisation</td>
+          <td>Exscientia</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CASE STUDIES -->
+  <div class="section-label" style="margin-top:48px;">Section 06</div>
+  <div class="section-heading">
+    <span class="section-num">06</span>
+    <h2 id="cases">Case Studies</h2>
+  </div>
+
+  <h3 class="subsection-heading">6.1 COVID-19 Pandemic Response</h3>
+
+  <p>
+    The SARS-CoV-2 pandemic provided an unprecedented stress test for AI-driven drug repurposing.
+    Within weeks of the virus's structure being published, platforms such as BenevolentAI used their
+    KG infrastructure to identify baricitinib — approved for rheumatoid arthritis — as a candidate
+    capable of inhibiting AAK1-mediated viral endocytosis and moderating the cytokine storm associated
+    with severe COVID-19 [17]. This hypothesis, generated in under 48 hours, was subsequently
+    validated in the ACTT-2 randomised trial and the drug received emergency use authorisation from
+    the FDA in 2020 [17].
+  </p>
+
+  <p>
+    Concurrently, MIT's AI Cures project and Deargen's MT-DTI model both predicted atazanavir and
+    remdesivir as high-priority candidates based on drug–target interaction models trained on existing
+    antiviral data [18]. Remdesivir's subsequent authorisation demonstrated that AI-ranked repurposing
+    hypotheses can reach clinical validation within months under emergency conditions.
+  </p>
+
+  <h3 class="subsection-heading">6.2 Insilico Medicine: First AI-Designed Drug in Clinical Trials</h3>
+
+  <p>
+    In 2023, Insilico Medicine announced that ISM001-055, a drug designed entirely by its generative
+    AI platform for the treatment of idiopathic pulmonary fibrosis (IPF), had entered Phase II
+    clinical trials [12]. The discovery phase, which would conventionally take 4–5 years, was
+    compressed to 18 months using a pipeline integrating PandaOmics (target identification) and
+    Chemistry42 (molecular generation). This milestone represents the first fully AI-conceived drug
+    candidate to reach late-stage human trials.
+  </p>
+
+  <h3 class="subsection-heading">6.3 Exscientia &amp; Atomwise: Accelerating Lead Discovery</h3>
+
+  <p>
+    Exscientia, in collaboration with Sumitomo Dainippon Pharma, developed DSP-1181 — an
+    obsessive-compulsive disorder (OCD) candidate — in approximately 12 months versus an industry
+    average of 4.5 years, using reinforcement learning-guided molecular optimisation [19].
+    Similarly, Atomwise's AtomNet platform identified candidate inhibitors for the Ebola virus VP24
+    protein in less than two days from a screen of over 8,000 compounds, with two candidates
+    showing significant in vitro activity [20].
+  </p>
+
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE 5  |  Challenges · Future Outlook · Conclusion
+═══════════════════════════════════════════════════════════ -->
+<div class="content-page page-break">
+
+  <!-- CHALLENGES -->
+  <div class="section-label">Section 07</div>
+  <div class="section-heading">
+    <span class="section-num">07</span>
+    <h2 id="challenges">Challenges &amp; Ethical Considerations</h2>
+  </div>
+
+  <h3 class="subsection-heading">7.1 Data Quality &amp; Bias</h3>
+
+  <p>
+    AI models are only as reliable as the data on which they are trained. Biomedical datasets frequently
+    suffer from systematic biases: clinical trial populations are not demographically representative,
+    published literature over-represents positive results, and proprietary compound activity data is
+    often siloed within pharmaceutical corporations [21]. Models trained on such data may perform
+    admirably on benchmark datasets while failing to generalise to underrepresented disease populations
+    or novel chemical scaffolds — a phenomenon known as distribution shift.
+  </p>
+
+  <h3 class="subsection-heading">7.2 Interpretability &amp; Regulatory Acceptance</h3>
+
+  <p>
+    The "black box" nature of deep learning models presents a fundamental challenge for regulatory
+    submission. Regulatory agencies such as the FDA and EMA require mechanistic justification for
+    drug development decisions, yet the internal representations of large neural networks resist
+    straightforward biochemical interpretation [22]. Explainable AI (XAI) techniques — including
+    attention mechanisms, SHAP values, and counterfactual explanations — are being developed
+    to address this gap, but consensus on regulatory standards for AI-assisted submissions remains
+    nascent [22].
+  </p>
+
+  <div class="callout">
+    <div class="callout-title">Ethical Consideration</div>
+    <p>
+      AI-driven drug repurposing may exacerbate healthcare inequities if algorithms are trained
+      predominantly on data from high-income countries, systematically deprioritising diseases
+      prevalent in low- and middle-income settings. Proactive dataset diversification and
+      open-access data sharing are critical countermeasures.
+    </p>
+  </div>
+
+  <h3 class="subsection-heading">7.3 Intellectual Property &amp; Commercial Incentives</h3>
+
+  <p>
+    The intellectual property landscape for AI-generated drugs is unresolved. Current legal frameworks
+    in most jurisdictions do not permit non-human inventors to hold patents, creating uncertainty about
+    ownership of AI-designed molecules [23]. Furthermore, the commercial incentives that drive
+    pharmaceutical R&amp;D may not align with repurposing opportunities for off-patent drugs, even when
+    AI identifies them as clinically promising, unless alternative funding mechanisms such as
+    prize models or public-private partnerships are established.
+  </p>
+
+  <!-- FUTURE OUTLOOK -->
+  <div class="section-label" style="margin-top:48px;">Section 08</div>
+  <div class="section-heading">
+    <span class="section-num">08</span>
+    <h2 id="future">Future Outlook</h2>
+  </div>
+
+  <p>
+    Several converging technological trends are likely to deepen AI's impact over the next decade.
+    Multimodal foundation models that jointly encode genomic sequences, protein structures, molecular
+    graphs, clinical imaging, and electronic health records will enable more holistic disease modelling
+    than single-modality approaches permit [24]. Foundation models pre-trained on vast biomedical corpora —
+    analogous to GPT-4 in natural language processing — are beginning to emerge, with early examples
+    such as Genie, MolBERT, and GeneFormer demonstrating strong transfer learning performance across
+    diverse downstream drug discovery tasks.
+  </p>
+
+  <p>
+    Laboratory automation via self-driving laboratories (SDLs) represents another pivotal development.
+    Platforms such as Emerald Cloud Lab and the Chematica/Synthia route planning system couple AI
+    hypothesis generation with automated synthesis and assay robots, closing the design–make–test–analyse
+    (DMTA) cycle in days rather than months [25]. When combined with generative chemistry, SDLs
+    effectively transform drug discovery into a computational optimisation problem over chemical space.
+  </p>
+
+  <p>
+    On the regulatory frontier, the FDA's Advancing Real-World Evidence (RWE) programme and the
+    EMA's PRIME scheme are beginning to accommodate AI-assisted trial design, adaptive protocols,
+    and synthetic control arms — signalling a gradual convergence between regulatory practice and
+    AI-native development workflows [22].
+  </p>
+
+  <!-- CONCLUSION -->
+  <div class="section-label" style="margin-top:48px;">Section 09</div>
+  <div class="section-heading">
+    <span class="section-num">09</span>
+    <h2 id="conclusion">Conclusion</h2>
+  </div>
+
+  <p>
+    Artificial intelligence is not a panacea for the inherent biological complexity that drives
+    pharmaceutical attrition, but it is a powerful engine for compressing inefficiencies at every
+    stage of the drug development continuum. From AlphaFold's structural revolution to
+    BenevolentAI's COVID-19 repurposing hypothesis and Insilico Medicine's first AI-designed
+    clinical candidate, concrete evidence of transformative impact is accumulating rapidly.
+  </p>
+
+  <p>
+    For drug repurposing specifically, AI enables a systematic, data-driven exploitation of approved
+    drug assets against unmet medical needs — an approach with potentially enormous humanitarian
+    and economic returns. Realising this potential will require coordinated investment in open,
+    diverse biomedical data infrastructure; the development of interpretable AI frameworks that
+    satisfy regulatory requirements; and equitable IP arrangements that align commercial incentives
+    with public health priorities.
+  </p>
+
+  <p>
+    The pharmaceutical industry is at an inflection point. Organisations that successfully integrate
+    AI into their research culture — not merely as a tool but as a core epistemic methodology —
+    will define the next era of medicine.
+  </p>
+
+  <div class="page-footer">
+    <span>AI in Drug Discovery &amp; Repurposing — Mini Research Project</span>
+    <span>Page 5 of 6</span>
+  </div>
+
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE 6  |  References
+═══════════════════════════════════════════════════════════ -->
+<div class="references-page">
+  <div class="section-label">Section 10</div>
+  <h2>References</h2>
+
+  <ol class="ref-list">
+    <li>
+      DiMasi, J. A., Grabowski, H. G., &amp; Hansen, R. W. (2016). Innovation in the pharmaceutical
+      industry: New estimates of R&amp;D costs. <em>Journal of Health Economics</em>, 47, 20–33.
+      https://doi.org/10.1016/j.jhealeco.2016.01.012
+    </li>
+    <li>
+      Schneider, G. (2018). Automating drug discovery. <em>Nature Reviews Drug Discovery</em>, 17(2),
+      97–113. https://doi.org/10.1038/nrd.2017.232
+    </li>
+    <li>
+      Pushpakom, S., et al. (2019). Drug repurposing: progress, challenges and recommendations.
+      <em>Nature Reviews Drug Discovery</em>, 18(1), 41–58. https://doi.org/10.1038/nrd.2018.168
+    </li>
+    <li>
+      Grand View Research. (2023). <em>AI in Drug Discovery Market Size Report, 2023–2030</em>.
+      https://www.grandviewresearch.com/industry-analysis/ai-in-drug-discovery-market-report
+    </li>
+    <li>
+      Mayr, A., et al. (2018). Large-scale comparison of machine learning methods for drug target
+      prediction on ChEMBL. <em>Chemical Science</em>, 9(24), 5441–5451.
+      https://doi.org/10.1039/C8SC00148K
+    </li>
+    <li>
+      Scannell, J. W., et al. (2012). Diagnosing the decline in pharmaceutical R&amp;D efficiency.
+      <em>Nature Reviews Drug Discovery</em>, 11(3), 191–200. https://doi.org/10.1038/nrd3681
+    </li>
+    <li>
+      Wu, Z., et al. (2018). MoleculeNet: a benchmark for molecular machine learning.
+      <em>Chemical Science</em>, 9(2), 513–530. https://doi.org/10.1039/C7SC02664A
+    </li>
+    <li>
+      Gilmer, J., et al. (2017). Neural message passing for quantum chemistry.
+      <em>Proceedings of ICML 2017</em>, 70, 1263–1272. https://arxiv.org/abs/1704.01212
+    </li>
+    <li>
+      Lin, Z., et al. (2023). Evolutionary-scale prediction of atomic-level protein structure with
+      a language model. <em>Science</em>, 379(6637), 1123–1130.
+      https://doi.org/10.1126/science.ade2574
+    </li>
+    <li>
+      Jumper, J., et al. (2021). Highly accurate protein structure prediction with AlphaFold.
+      <em>Nature</em>, 596(7873), 583–589. https://doi.org/10.1038/s41586-021-03819-2
+    </li>
+    <li>
+      Tunyasuvunakool, K., et al. (2021). Highly accurate protein structure prediction for the human
+      proteome. <em>Nature</em>, 596(7873), 590–596. https://doi.org/10.1038/s41586-021-03828-1
+    </li>
+    <li>
+      Ren, F., et al. (2023). AlphaFold accelerates artificial intelligence powered drug discovery:
+      efficient discovery of a novel CDK20 small molecule inhibitor. <em>Chemical Science</em>, 14,
+      1443–1452. https://doi.org/10.1039/D2SC05709C
+    </li>
+    <li>
+      Zhavoronkov, A., et al. (2019). Deep learning enables rapid identification of potent DDR1
+      kinase inhibitors. <em>Nature Biotechnology</em>, 37(9), 1038–1040.
+      https://doi.org/10.1038/s41587-019-0224-x
+    </li>
+    <li>
+      Cheng, F., et al. (2018). Network-based approach to prediction and population-based validation
+      of in silico drug repurposing. <em>Nature Communications</em>, 9, 2691.
+      https://doi.org/10.1038/s41467-018-05116-5
+    </li>
+    <li>
+      Sang, H., et al. (2019). Predicting drug–disease associations through layer attention
+      graph convolutional network. <em>Briefings in Bioinformatics</em>, 22(4).
+      https://doi.org/10.1093/bib/bbaa243
+    </li>
+    <li>
+      Lee, J., et al. (2020). BioBERT: a pre-trained biomedical language representation model for
+      biomedical text mining. <em>Bioinformatics</em>, 36(4), 1234–1240.
+      https://doi.org/10.1093/bioinformatics/btz682
+    </li>
+    <li>
+      Richardson, P., et al. (2020). Baricitinib as potential treatment for 2019-nCoV acute
+      respiratory disease. <em>The Lancet</em>, 395(10223), e30–e31.
+      https://doi.org/10.1016/S0140-6736(20)30304-4
+    </li>
+    <li>
+      Beck, B. R., et al. (2020). Predicting commercially available antiviral drugs that may act on
+      the novel coronavirus (SARS-CoV-2) through a drug-target interaction deep learning model.
+      <em>Computational and Structural Biotechnology Journal</em>, 18, 784–790.
+      https://doi.org/10.1016/j.csbj.2020.03.025
+    </li>
+    <li>
+      Exscientia. (2020). <em>Exscientia and Sumitomo Dainippon Pharma advance world's first
+      AI-designed drug into clinical trials</em>. Press Release.
+      https://www.exscientia.ai/news-insights/dsp-1181
+    </li>
+    <li>
+      Wallach, I., et al. (2015). AtomNet: A Deep Convolutional Neural Network for Bioactivity
+      Prediction in Structure-Based Drug Discovery. <em>arXiv</em>.
+      https://arxiv.org/abs/1510.02855
+    </li>
+    <li>
+      Obermeyer, Z., &amp; Emanuel, E. J. (2016). Predicting the future — big data, machine
+      learning, and clinical medicine. <em>New England Journal of Medicine</em>, 375(13),
+      1216–1219. https://doi.org/10.1056/NEJMp1606181
+    </li>
+    <li>
+      FDA. (2021). <em>Artificial Intelligence/Machine Learning (AI/ML)-Based Software as a Medical
+      Device (SaMD) Action Plan</em>. U.S. Food and Drug Administration.
+      https://www.fda.gov/media/145022/download
+    </li>
+    <li>
+      Abbott, R., &amp; Storz, A. (2019). The Artificial Inventor. <em>AIPLA Quarterly Journal</em>,
+      46(3). https://ssrn.com/abstract=3359756
+    </li>
+    <li>
+      Bommasani, R., et al. (2021). On the opportunities and risks of foundation models.
+      <em>arXiv</em>. https://arxiv.org/abs/2108.07258
+    </li>
+    <li>
+      Coley, C. W., et al. (2019). A robotic platform for flow synthesis of organic compounds
+      informed by AI planning. <em>Science</em>, 365(6453).
+      https://doi.org/10.1126/science.aax1566
+    </li>
+  </ol>
+
+  <div class="page-footer" style="margin-top:40px;">
+    <span>AI in Drug Discovery &amp; Repurposing — Mini Research Project</span>
+    <span>Page 6 of 6 &nbsp;·&nbsp; <span class="current-year"></span></span>
+  </div>
+</div>
+
+<script src="research.js"></script>
+</body>
+</html>
